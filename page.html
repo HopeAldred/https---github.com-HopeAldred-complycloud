@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My organisation page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body onload="startTime()">
+
+    <div>
+        <header>
+            <nav class="navContainer">
+                <div class="headerContainer">
+                    <div class="navLinkContainer">
+                        <img src="img/logo-icon.svg" class="logoIcon" alt="logo">
+                        <div class="mainNavigation">
+                            <li class="trunk"><img src="img/dash-icon.svg" class="navIcons" alt="dash-icon">Dashboard
+                            </li>
+                            <li class="trunk"><img src="img/data-icon.svg" class="navIcons" alt="data-icon">Data</li>
+                            <li class="trunk"><img src="img/docs-icon.svg" class="navIcons" alt="data-icon">Documents
+                            </li>
+                            <li class="trunk"><img src="img/tasks-icon.svg" class="navIcons" alt="tasks-icon">Tasks</li>
+                            <li class="trunk"><img src="img/settings-icon.svg" class="navIcons"
+                                    alt="settings-icon">Settings</li>
+                        </div>
+                        <div class="settingsNav">
+                            <li class="trunk"><img src="img/support-icon.svg" class="navIcons"
+                                    alt="support-icon">Support</li>
+                            <li class="trunk"><img src="img/my-icon.svg" class="navIcons" alt="my-icon">My Company ApS
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="sideNav pageSideNav">
+        <div class="sideNavLinks">
+            <img src="img/side-nav-1.svg" class="sideNavIcons sideNavPrimary" alt="side-nav-1">
+            <img src="img/side-nav-2.svg" class="sideNavIcons" alt="side-nav-2">
+            <img src="img/side-nav-3.svg" class="sideNavIcons" alt="side-nav-3">
+            <img src="img/side-nav-4.svg" class="sideNavIcons" alt="side-nav-4">
+            <img src="img/side-nav-5.svg" class="sideNavIcons" alt="side-nav-5">
+        </div>
+    </div>
+
+    <main class="pageMain">
+        <a href="index.html" class="backButton"> < Back </a>
+        <div class="mainHead">
+            <h1 class="subHead">Subsidiaries & Departments</h1>
+            <h2 class="subTitle">In this page you can view and edit information about your organisation</h2>
+        </div>
+
+        <article class="coreContent">
+
+            <div class="orgNameContainer">
+                <img src="img/comply-icon.svg" class="complyIcon" alt="comply-icon">
+                <div class="logoName">
+                    <h2 class="nameTitle">Name</h2>
+                    <div class="orgPen">
+                        <h3 class="nameSubTitle">Organization name</h3>
+                        <img src="img/pen-icon.svg" class="penIcon" alt="pen-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="generalContainer">
+                <h1 class="generalTitle">General Information</h1>
+
+
+                <div class="generalFlex">
+                    <div class="regBox">
+                        <h2 class="regTitle">Company reg. number</h2>
+                        <p class="regNumber">CVR 999999</p>
+                    </div>
+
+                    <div class="industryBox">
+                        <h2 class="industryTitle">Industry</h2>
+                        <p class="industryInfo">IT - hosting and infrastructure<br>(hosting, storage, backup security
+                            and<br>similar infrastrucure services </p>
+                    </div>
+
+                    <div class="roleBox">
+                        <h2 class="roleTitle">GDPR role</h2>
+                        <span class="roleLabel">Controller</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="infoGrid">
+
+                <div class="infoContainer">
+                    <h1 class="addressTitle">Address and Timezone</h1>
+                    <h2 class="addressSubTitle">See which location and timezone your sub-organization resides</h2>
+
+                    <div class="addressBoxFlex">
+                        <div class="addressInfo">
+                            <h2 class="addressHead">Address</h2>
+                            <p class="addressLocation">Borgergade 24B, 3,<br>1300 København<br>Denmark</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.2520583576984!2d12.58407551521921!3d55.68460540471806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253ce735ae527%3A0xc18c1c943ab84fb0!2sComplyCloud!5e0!3m2!1sen!2sdk!4v1670260412936!5m2!1sen!2sdk"
+                            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <hr class="addressLine">
+
+                    <div class="timezone">
+                        <h2 class="timezoneTitle">Timezone</h2>
+                        <div id="txt"></div>
+
+                        <div class="timezoneLocation">
+                            <p class="copenhagen">Copenhagen</p>
+                            <p class="denmark">Denmark</p>
+                            <p class="utc">(UTC)+0:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subContainer">
+                    <h1 class="subsidTitle">Subsidiaries settings</h1>
+                    <h2 class="subsidSubTitle">Choose which control your sub-organisation has and it's dependancies.
+                    </h2>
+                    <span class="roleLabel orgLabel">Organization</span>
+
+                    <div class="companyContainer">
+                        <div class="parentContainer">
+                            <h2 class="parentTitle">Parent company:</h2>
+                            <h2 class="comply">ComplyCloud</h2>
+                        </div>
+                        <div class="childContainer">
+                            <h2 class="childTitle">Child company:</h2>
+                            <h2 class="comply">ComplyCloud</h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contactContainer">
+                    <h1 class="contactTitle">Contact person</h1>
+                    <h2 class="contactSubTitle">See contact details for your main contacts within the sub-organization.
+                    </h2>
+
+                    <h2 class="dpo">Data protection officer:</h2>
+                    <div class="janeDoe">
+                        <h2 class="janeDoeTitle">Jane Doe</h2>
+                        <h2 class="janeDoeEmail">janedoe@email.com</h2>
+                    </div>
+
+                    <h2 class="contactOrg">Contact for organization:</h2>
+                    <div class="johnDoe">
+                        <h2 class="johnDoeTitle">John Doe</h2>
+                        <h2 class="johnDoeEmail">johndoe@email.com</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

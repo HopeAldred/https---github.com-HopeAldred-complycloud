@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <nav class="navContainer">
+                <div class="headerContainer">
+                    <div class="navLinkContainer">
+                        <img src="img/logo-icon.svg" class="logoIcon" alt="logo">
+                        <div class="mainNavigation">
+                            <li class="trunk"><img src="img/dash-icon.svg" class="navIcons" alt="dash-icon">Dashboard
+                            </li>
+                            <li class="trunk"><img src="img/data-icon.svg" class="navIcons" alt="data-icon">Data</li>
+                            <li class="trunk"><img src="img/docs-icon.svg" class="navIcons" alt="data-icon">Documents
+                            </li>
+                            <li class="trunk"><img src="img/tasks-icon.svg" class="navIcons" alt="tasks-icon">Tasks</li>
+                            <li class="trunk"><img src="img/settings-icon.svg" class="navIcons"
+                                    alt="settings-icon">Settings</li>
+                        </div>
+                        <div class="settingsNav">
+                            <li class="trunk"><img src="img/support-icon.svg" class="navIcons"
+                                    alt="support-icon">Support</li>
+                            <li class="trunk"><img src="img/my-icon.svg" class="navIcons" alt="my-icon">My Company ApS
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="sideNav newSideNav">
+        <div class="sideNavLinks">
+            <img src="img/side-nav-1.svg" class="sideNavIcons sideNavPrimary" alt="side-nav-1">
+            <img src="img/side-nav-2.svg" class="sideNavIcons" alt="side-nav-2">
+            <img src="img/side-nav-3.svg" class="sideNavIcons" alt="side-nav-3">
+            <img src="img/side-nav-4.svg" class="sideNavIcons" alt="side-nav-4">
+            <img src="img/side-nav-5.svg" class="sideNavIcons" alt="side-nav-5">
+        </div>
+    </div>
+
+    <main class="pageMain">
+        <a href="index.html" class="backButton">
+            < Back </a>
+                <div class="mainHead">
+                    <h1 class="subHead">Subsidiaries & Departments</h1>
+                    <h2 class="subTitle">In this page you can create a new subsidiary or edit information about a
+                        current organisation</h2>
+                </div>
+
+                <article class="coreContent">
+
+                    <div class="newOrgNameFlex">
+                        <div class="orgNameContainer">
+                            <img src="img/comply-icon.svg" class="complyIcon" alt="comply-icon">
+                            <div class="logoName">
+                                <h2 class="nameTitle">Name</h2>
+                                <div class="orgPen">
+                                    <h3 class="nameSubTitle">Organization name</h3>
+                                    <img src="img/pen-icon.svg" class="penIcon" alt="pen-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newPageBtns">
+                            <button class="filterBtn newSave">Cancel</button>
+                            <a href="page.html"><button class="addNew">
+                                <img src="img/check-icon.svg" class="saveCheck" alt="checkIcon">Save</button></a>
+                        </div>
+                    </div>
+
+                    <div id="closeBox" class="savedInfoContainer">
+                        <h1 class="savedInfoTitle">Use previously saved information?</h1>
+                        <div class="savedFlexBox">
+                            <h2 class="savedText">We have saved information stored from the main organization and
+                                previous subsidiaries, would you like to use these details?
+                            </h2>
+                            <div class="savedBtns">
+                                <button id="closeDiv" class="addNew">Confirm</button>
+                                <button id="closeDiv" class="manualBtn">No, I'd like to add manually</button>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose main subsidiary here</button>
+                            <div class="dropdown-content">
+                                <a href="#">Company A</a>
+                                <a href="#">Company B</a>
+                                <a href="#">Company C</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newGrid">
+
+                        <div class="generalContainer">
+                            <h1 class="generalTitle">General information</h1>
+                            <div class="newGeneralFlexBox">
+                                <div class="newFlex1">
+                                    <h2 class="flexTitle">Company reg number (CVR)</h2>
+                                    <input type="text" class="bar gridBar" placeholder="Search">
+                                </div>
+                                <div class="newFlex2">
+                                    <h2 class="flexTitle">Industry</h2>
+                                    <input type="text" class="bar gridBar" placeholder="Search">
+                                </div>
+                                <div class="newFlex3">
+                                    <h2 class="flexTitle">GDPR role</h2>
+                                    <label class="radioContainer1">
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>Processor
+                                    </label>
+                                    <label class="radioContainer2">
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>Controller
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infoContainer newAddressGrid">
+                            <h1 class="addressTitle">Address and timezone</h1>
+                            <h2 class="addressSubTitle">Add or edit an organisation address here:</h2>
+
+                            <div class="addressGrid">
+                                <div class="addCo">
+                                    <h2 class="addressGridTitle">Address C/O</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="street">
+                                    <h2 class="addressGridTitle">Street</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="street2">
+                                    <h2 class="addressGridTitle">Street 2</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="building">
+                                    <h2 class="addressGridTitle">Building number, floor</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="city">
+                                    <h2 class="addressGridTitle">City</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="zipcode">
+                                    <h2 class="addressGridTitle">Zipcode</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="newTimezone">
+                                    <h2 class="addressGridTitle">Timezone</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="phone">
+                                    <h2 class="addressGridTitle">Phone</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                                <div class="newEmail">
+                                    <h2 class="addressGridTitle">Email</h2>
+                                    <input class="addressInput" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subContainer newSubGrid">
+                            <h1 class="subsidTitle">Subsidiaries settings</h1>
+                            <h2 class="subsidSubTitle">Choose which control your sub-organisation has and it's
+                                dependancies.
+                            </h2>
+
+                            <div class="companyContainer">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark">Organization</span>
+                                    <span class="roleLabel orgLabel newOrgLabel">ORG</span>
+                                    <p class="subContainerText">Informational text here on what an organization is
+                                        defined as</p>
+                                </label>
+                                <div class="childContainer">
+                                    <label class="container">
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark">Department</span>
+                                        <span class="roleLabel orgLabel dept2">DEPT</span>
+                                        <p class="subContainerText">Informational text here on what a department is
+                                            defined as</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contactContainer newContactContainer">
+                            <h1 class="contactTitle">Contact person</h1>
+                            <h2 class="contactSubTitle">See contact details for your main contacts within the
+                                sub-organization.
+                            </h2>
+
+                            <h2 class="addressGridTitle">Head of department</h2>
+                            <input class="gridInput" type="text">
+
+                            <h2 class="addressGridTitle">DPO</h2>
+                            <input class="gridInput" type="text">
+
+                        </div>
+
+                    </div>
+
+
+
+                </article>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
